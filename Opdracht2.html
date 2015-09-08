@@ -22,6 +22,7 @@
 			<form>
 				<fieldset>
 					<legend>Contactgegevens:</legend>
+					<section>
 					<ul>
 						<li>
 							<label for="naam">Naam</label>
@@ -52,16 +53,17 @@
 							<input type="email"/>
 						</li>	
 					</ul>
-				</fieldset>
-				<fieldset>
+				</section>
+				<section>
 					<label>Ik wil mij aanmelden:</label>
 						<label><input type="radio" name="aanmelden" value="Voor een project">Voor een project</label>
 						<label><input type="radio" name="aanmelden" value="Als stagebedrijf">Als stagebedrijf</label>
+				</section>
 				</fieldset>
 				
 				<fieldset>
 					<legend>Project</legend>
-					<fieldset>
+					<section>
 						<ol>
 							<li>
 								<label for="titel">Titel</label>
@@ -88,8 +90,8 @@
 								<input type="text" id="deadline"/>
 							</li>
 						</ol>
-					</fieldset>
-					<fieldset>
+					</section>
+					<section>
 						<ul>
 							<li>
 								<label>Geschikt voor</label>
@@ -100,26 +102,26 @@
 								<label><input type="radio" name="geschiktVoorProject" value="Onbekend">Onbekend</label>
 							</li>
 						</ul>
-					</fieldset>
-					<fieldset>
+					</section>
+					<section>
 						<ul>
 							<li>
 								<label for="opmerkingenProject">Opmerkingen</label>
 								<input type="text" id="opmerkingenProject"/>
 							</li>
 						</ul>
-					</fieldset>
+					</section>
 				</fieldset>
 
 				<fieldset>
 					<legend>Stage</legend>
-					<fieldset>
+					<section>
 							<label>Geschikt voor</label>
 							<label><input type="radio" name="geschiktVoorStage" value="Tweedejaars studenten">Tweedejaars studenten</label>
 							<label><input type="radio" name="geschiktVoorStage" value="Afstudeer studenten">Afstudeer studenten</label>
 							<label><input type="radio" name="geschiktVoorStage" value="Onbekend">Onbekend</label>			
-					</fieldset>
-					<fieldset>
+					</section>
+					<section>
 						<ul>
 							<li>
 								<label>Hoe lang is de stage?</label>
@@ -131,13 +133,13 @@
 								<input type="text" id="beginDatum"/>
 							</li>
 						</ul>
-					</fieldset>
-					<fieldset>						
+					</section>
+					<section>						
 						<label for="beschrijvingWerkzaamheden">Beschrijving werkzaamheden</label>
 						<input type="text" id="beschrijvingWerkzaamheden"/>			
-					</fieldset>
-					<fieldset>
-						<legend>Beschrijving stagebedrijf</legend>
+					</section>
+					<section>
+						<h2>Beschrijving stagebedrijf</h2>
 						<ol>
 							<li>
 								<label for="bedrijfsNaam">BedrijfsNaam</label>
@@ -164,11 +166,11 @@
 								<input type="text" id="coreBusinessStage"/>
 							</li>
 						</ol>
-					</fieldset>
-					<fieldset>
+					</section>
+					<section>
 						<label for="opmerkingenStage">Opmerkingen</label>
 						<input type="text" id="opmerkingenStage"/>
-					</fieldset>
+					</section>
 				</fieldset>
 
 			</form>
