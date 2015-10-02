@@ -1,0 +1,178 @@
+* {
+/*	padding: 0;*/
+	margin: 0 auto;
+	box-sizing: border-box;
+	font-family: raleway;
+	font-size: .98em;
+	line-height: 140%;
+	font-weight: 300;
+	word-wrap: break-word;
+}
+
+h1 {
+	font-size: 1.999em;
+	font-weight: 700;
+}
+
+h2{
+	font-size: 1.414em;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 1em;
+	font-weight: 700;
+}
+
+body>header {
+	float: left;
+	width: 15%;
+	padding: 1em;
+	box-sizing: border-box;
+	position: fixed;
+	background-color: #ffcc00;
+}
+
+body>header>h1{
+	font-size: calc(1.99vw);
+}
+
+body>header>h2{
+	font-size: calc(1.44vw);
+}
+
+body>header>h3{
+	font-size: calc(1vw);
+}
+
+body>header>nav>ul{
+	padding-left: .8em;
+}
+
+body>header>img {
+	max-width: calc(14vw);
+	padding: calc(.5vw);
+}
+
+main {
+	position: relative;
+	left: calc(15vw);
+	width: 75%;
+	float: left;
+	padding: 1em;
+	box-sizing: border-box;
+}
+
+body>section {
+	position: relative;
+	left: calc(15vw);
+	width: 75%;
+	padding: 1em;
+	box-sizing: border-box;
+	clear: left;
+	float: left;
+}
+
+aside {
+	position: relative;
+	left: calc(15vw);
+	width: 75%;
+	padding: 1em;
+	box-sizing: border-box;
+	clear: left;
+	float: left;
+}
+
+body>footer {
+	position: relative;
+	left: calc(15vw);
+	width: 75%;
+	padding: 1em;
+	box-sizing: border-box;
+	clear: left;
+	float: left;
+}
+
+main>article{
+	margin: 0 auto;
+	-webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+}
+
+main img{
+	max-width: 19em;
+}
+
+@media only screen and (max-device-width: 900px){
+	main>article{
+		-webkit-column-count: 1;
+    	-moz-column-count: 1;
+    	column-count: 1;
+	}
+
+	body>header {
+	float: left;
+	padding: 1em;
+	box-sizing: border-box;
+	position: static;
+	background-color: #ffcc00;
+	}
+
+	*{
+	position:static;
+	left: 0;
+	}
+}
+
+label {
+	display: block;
+	clear: both;
+	margin-top: 1em;
+}
+
+label>span {
+	float: left;
+}
+
+textarea {
+	display: block;
+	float: left;
+	clear: both;
+}
+
+input {
+	display: block;
+	float: left;
+	clear: both;
+}
+
+fieldset {
+	clear: left;
+	margin-top: 2em;
+    position:relative;
+    padding-top: 3em;
+}   
+
+legend {
+    top:1em;
+    position:absolute;
+    font-size: 1.414em;
+    font-weight:700;   
+} 
+
+#stage {
+	width: calc(35.5vw);  
+	float: left;
+}
+
+#project {
+	width: calc(35.5vw);  
+	float: right;
+}	
+
+label>em {
+	display: block;
+	float: left;
+	margin-left: 1em;
+}
