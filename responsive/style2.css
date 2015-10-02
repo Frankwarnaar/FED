@@ -1,0 +1,188 @@
+* {
+	margin: 0;
+	font-family: raleway;
+	line-height: 140%;
+}
+
+
+body>header {
+	max-width: 100%;
+	margin-top: 1em;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: flex-start;
+	box-sizing: border-box;
+	background-color: #ffcc00;
+	margin: 0 auto; 
+	padding: 1em;
+	margin-bottom: 1em;
+	padding-left: 0;
+	margin-right: 0;
+	justify-content: space-around;
+	box-shadow: 0 0 5px 5px rgba(0,0,0,.5);
+}
+
+body>header>p {
+	max-width: 10em;
+}
+
+body>header>*{
+	margin: 1rem;
+}
+
+body img {
+	max-width: 30rem;
+}
+
+header>img{
+	width: 300px;
+	height: 100%;
+}
+
+body>main{
+	padding-right: 1rem;
+	max-width: 40em;
+	margin: 0 auto;
+}
+
+body>section{
+	padding-top: 1rem;
+}
+
+body>aside{
+	padding-top: 1rem;
+}
+
+body h1, h2, h3, h4{
+	margin-top: 1rem;
+}
+
+body>footer h1,body>footer h2,body>footer h3,body>footer h4{
+	margin-top: 0;
+}
+
+main>article {
+	display: flex;
+	flex-direction: column;
+}
+
+body>footer {
+	background-color: #f2f2f2;
+	margin-top: 1em;
+	color: black;
+	display: flex;
+	flex-direction: row;
+	clear: both;
+}
+
+body>footer>*{
+	margin: 1rem;
+}
+
+a {
+	color: black;
+}
+
+article h1{
+	margin-top: 1rem;
+}
+
+div {
+	display:flex;
+	flex-direction: column;
+	margin: 0 auto;
+	max-width: 40em;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	max-width: 40em;
+	margin: 0 auto;
+}
+
+@media (min-width: 70em){
+	main {
+		float: left;
+		padding-left: 4rem;
+	}
+
+	body>section{
+		float: right;
+	}
+
+	body>aside {
+		float: right;
+	}
+
+	body>div {
+		padding-right: 5em;
+		padding-left: 5em;
+	}
+}
+
+@media (max-width: 69em) {
+	body>header {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	body>footer{
+		flex-wrap: wrap;
+	}
+	
+	main{
+		padding-left: 1rem;
+	}
+
+	body img{
+		max-width: 30em;
+	}
+
+}
+
+/*@media (max-width:49em){
+	main{
+		clear: left;
+	}
+	
+	body>section{
+		clear: right;
+	}
+
+	body>aside {
+		clear: right;
+	}
+
+}*/
+
+@media (max-width: 30em) {
+	body>header {
+		flex-direction: column;
+	}
+
+	body>header:nth-child(n){
+		padding-left: 1rem;
+		padding-right: 1rem;
+		padding-top: 1rem;
+	}
+
+	img{
+		max-width: 20em;
+	}
+
+	body img{
+		width: calc(80vw);
+	}
+
+	body>footer {
+	display: flex;
+	flex-direction: column;
+	}
+
+	main>article>header {
+	order: 0;
+	}
+
+	main>article>footer {
+	order: 1;
+	}
+
+}
