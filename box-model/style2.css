@@ -1,0 +1,94 @@
+* {
+/*	padding: 0;*/
+	margin: 0 auto;
+	box-sizing: border-box;
+	font-family: raleway;
+	font-size: .98em;
+	line-height: 140%;
+	font-weight: 300;
+}
+
+h1 {
+	font-size: 1.999em;
+	font-weight: 700;
+	margin-top: 1rem;
+}
+
+h2{
+	font-size: 1.414em;
+	font-weight: 700;
+	margin-top: 1rem;
+}
+
+h3 {
+	font-size: 1em;
+	font-weight: 700;
+	margin-top: 1rem;
+}
+
+body>header {
+	float: left;
+	width: 15%;
+	padding: 1em;
+	box-sizing: border-box;
+	position: fixed;
+	background-color: #ffcc00;
+}
+
+body>header>nav>ul{
+	padding-left: .8em;
+}
+
+body>header>img {
+	max-width: calc(14vw);
+	padding: calc(.5vw);
+}
+
+main {
+	position: relative;
+	left: calc(15vw);
+	width: 75%;
+	float: left;
+	padding: 1em;
+	box-sizing: border-box;
+}
+
+body>section {
+	position: relative;
+	left: calc(15vw);
+	width: 75%;
+	float: left;
+	padding: 1em;
+	box-sizing: border-box;
+}
+
+aside {
+	position: relative;
+	left: calc(15vw);
+	width: 75%;
+	float: left;
+	padding: 1em;
+	box-sizing: border-box;
+}
+
+body>footer {
+	position: relative;
+	left: calc(15vw);
+	width: 75%;
+	float: left;
+	padding: 1em;
+	box-sizing: border-box;
+}
+
+main>article{
+	max-width: 38em;
+	margin: 0 auto;
+}
+
+main img{
+	max-width: 38em;
+}
+
+body>section{
+	margin: 0 auto;
+}
