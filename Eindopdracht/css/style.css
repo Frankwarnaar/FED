@@ -481,11 +481,19 @@ main input{
 }
 
 main input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]){
-	width: 15em;
+	width: 20em;
+	height: 1.8em;
+	outline: none;
+	transition: box-shadow .4s;
+}
+
+main input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):focus{
+	box-shadow: 0 0 .3em #0072ff;
 }
 
 main input:not([type="submit"]){
-	border: solid .1em hsl(0,0%,50%)
+	border: solid .1em rgb(230,230,230);
+	border-radius: .2em;
 }
 
 main input[type="radio"]{
@@ -497,10 +505,17 @@ main input[type="checkbox"]{
 }
 
 main textarea {
-	border: solid .1em hsl(0,0%,50%)
+	border: solid .1em rgb(230,230,230);
+	border-radius: .2em;
 	margin-bottom: .5em;
 	width: 80%;
-	margin-bottom: .5em;
+	height: 8em;
+	transition: box-shadow .4s;
+}
+
+main textarea:focus{
+	outline: 0;
+	box-shadow: 0 0 .3em #0072ff;
 }
 
 main form>input {
@@ -887,23 +902,23 @@ nav>button>span:after{
 		float: right;
 		width: 1.5em;
 		height: 1.5em;
-		margin-right: .2em;
+		margin-right: 0em;
 		position: relative;
 		animation: .3s;
 		transform: rotate(90deg);
-		top: .35rem;
+		/*top: .35rem;*/
 	}
 
 	div>section>article.closed div{
-		left: .3rem;
+		margin-right: -.3rem;
 		top: 0;
 	}
 
 	div>section>article div>span{
 		display: block;
 		position: relative;
-		top: .33rem;
-		left: 0;
+		margin-top: .33rem;
+		margin-left: 0;
 		width: 1rem;
 		height: .05rem;
 		background-color: #c2c2c2;
